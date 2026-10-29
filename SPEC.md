@@ -15,17 +15,17 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 The product is the same white T-shirt throughout the comparison. The baseline offers a size selector and temporary demo bag. No real orders, payment, accounts, or persistence. Keep product facts stable between directions; do not add unsupported claims about materials, manufacturing, sustainability, fit, delivery, scarcity, reviews, or sales.
 
-## Audience hypotheses
+### Audience hypotheses
 
 The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
 
-| Tiny card                             | Primary audience          | Secondary audience        |
-| ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |
+| Tiny card | Primary audience | Secondary audience |
+| :--- | :--- | :--- |
+| **Person in a concrete situation** | Remote software engineer / desk worker working long hours from home. | Tech intern / student transitioning between campus, coffee shops, and Zoom interviews. |
+| **Goal or meaning they seek** | An everyday uniform with zero decision fatigue; clean fit on camera, no logos, all-day seated comfort. | Durable, professional-looking essential that survives frequent shared-laundry cycles without losing shape. |
+| **Concern before choosing** | Will the collar bacon/sag after three washes, or will the fabric be see-through under bright desk lighting? | Will it shrink significantly or fit awkwardly if sitting all day? |
+| **What the page should help them decide** | Clear collar build specs, opacity under direct light, and fabric weight/breathability. | Wash test data/shrinkage expectations and unedited fit across body types. |
+| **Evidence or assumption** | Assumption; to be validated against customer fit feedback. | Assumption; to be validated against wash-cycle testing. |
 
 ## Early brand brief
 
