@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
+- Stage: BRAND-001 implementation ready for verification.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Status: In progress.
+- Next small decision: Verify automated checks and perform browser checks.
 
 ## Product boundary
 
@@ -19,73 +19,43 @@ The product is the same white T-shirt throughout the comparison. The baseline of
 
 The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
 
-| Tiny card | Primary audience | Secondary audience |
-| :--- | :--- | :--- |
-| **Person in a concrete situation** | Remote software engineer / desk worker working long hours from home. | Tech intern / student transitioning between campus, coffee shops, and Zoom interviews. |
-| **Goal or meaning they seek** | An everyday uniform with zero decision fatigue; clean fit on camera, no logos, all-day seated comfort. | Durable, professional-looking essential that survives frequent shared-laundry cycles without losing shape. |
-| **Concern before choosing** | Will the collar bacon/sag after three washes, or will the fabric be see-through under bright desk lighting? | Will it shrink significantly or fit awkwardly if sitting all day? |
-| **What the page should help them decide** | Clear collar build specs, opacity under direct light, and fabric weight/breathability. | Wash test data/shrinkage expectations and unedited fit across body types. |
-| **Evidence or assumption** | Assumption; to be validated against customer fit feedback. | Assumption; to be validated against wash-cycle testing. |
+| Tiny card                                 | Primary audience                                                                                            | Secondary audience                                                                                         |
+| :---------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| **Person in a concrete situation**        | Remote software engineer / desk worker working long hours from home.                                        | Tech intern / student transitioning between campus, coffee shops, and Zoom interviews.                     |
+| **Goal or meaning they seek**             | An everyday uniform with zero decision fatigue; clean fit on camera, no logos, all-day seated comfort.      | Durable, professional-looking essential that survives frequent shared-laundry cycles without losing shape. |
+| **Concern before choosing**               | Will the collar bacon/sag after three washes, or will the fabric be see-through under bright desk lighting? | Will it shrink significantly or fit awkwardly if sitting all day?                                          |
+| **What the page should help them decide** | Clear collar build specs, opacity under direct light, and fabric weight/breathability.                      | Wash test data/shrinkage expectations and unedited fit across body types.                                  |
+| **Evidence or assumption**                | Assumption; to be validated against customer fit feedback.                                                  | Assumption; to be validated against wash-cycle testing.                                                    |
 
 ## Early brand brief
 
-| Decision                                 | Agreement      |
-| ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
-| One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
-| One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Decision                | Agreement                                                                                                     |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Brand name              | NULLSET                                                                                                       |
+| One-sentence promise    | A zero-distraction, heavyweight combed-cotton white uniform designed for deep focus and all-day desk comfort. |
+| Primary brand archetype | The Sage (analytical, deliberate, unadorned, transparent)                                                     |
+| Voice traits            | Objective, Deliberate, Understated                                                                            |
 
-## Visual decision
+## Two hero directions
 
-Compare two small hero previews before building the whole page. Hold the product, headline, supporting copy, and action identical. Use specific real design references and annotate visual choices, intended effect, and risk.
+| Direction                       | Design choices                                                                                                                                                                | Intended effect                                                                                                          | Risk                                                                                        |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| **Modernist** (Kept)            | Strict baseline grid, neutral monospaced metadata, stark high-contrast hierarchy, and functional typography inspired by Josef Müller-Brockmann and Swiss typographic systems. | Instills immediate confidence and clarity; communicates deliberate engineering and eliminates emotional marketing noise. | Can feel cold or overly clinical to visitors seeking emotional lifestyle imagery.           |
+| **Postmodernist** (Alternative) | Deconstructed grid, visible layout bounding boxes, overlapping label tags, and raw industrial annotations inspired by April Greiman and David Carson.                         | Challenges fashion retail conventions and signals high visual irony and subcultural design awareness.                    | Increased visual friction makes critical specs and purchase actions harder to quickly scan. |
 
-A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
+## Persuasion principles (Cialdini)
 
-| Item                                              | Agreement or evidence |
-| ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
-| Chosen direction and reason                       | Not chosen yet        |
-| Original SVG logo                                 | Not chosen yet        |
-| Monochrome and small-size variants                | Not chosen yet        |
-| Logo review at actual use size                    | Not checked yet       |
-| Shared palette, typography, spacing, and assets   | Not chosen yet        |
-
-## Ethical persuasion
-
-Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
-
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+| Principle                    | Actual copy or interaction                                                                                 | Visitor benefit / factual support                                                                                                               |
+| :--------------------------- | :--------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Commitment & Consistency** | "Spec Transparency: 240 GSM combed cotton, 1x1 ribbed collar with internal binding tape."                  | Provides objective, verifiable construction facts so the engineer can logically confirm the shirt will not warp or shear under camera lighting. |
+| **Authority**                | "Dimensional Stability: Pre-shrunk fabric certified under standard laundry cycle tests (<1.5% shrinkage)." | Offers transparent test parameters to answer the student/intern's durability and washing concerns without exaggerated marketing hype.           |
 
 ## BRAND-001 — first branded storefront and live style guide
 
-**Scope:** turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
-
-Keep when:
-
-- The learner has chosen the audience hypotheses, brief, visual direction, and logo; the page visibly expresses those choices.
-- Two annotated hero directions compare modernist/postmodernist thinking with the same content and real source links.
-- The selected SVG logo works at small size and in one color; the presentations may share one asset.
-- The storefront and live style guide share CSS variables, typography, components, and assets; they do not drift into separate identities.
-- Two ethical persuasion applications are visible and their claims are supportable.
-- Prepared checks pass, the agent has reviewed the slice and discussed one actual check, and the learner has reported a browser impression plus keyboard/mobile observations.
-- The issue, branch, commit, and PR explain this feature in the learner's repository; agreed decisions and actual evidence are saved here. The learner has approved keeping and merging the change, and the merge into `main` is verified. Publishing is a separate choice.
+Scope: turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
 
 ## Evidence
 
-Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
-
-| Spec ID   | Files           | Issue / PR      | Actual checks and observations            |
-| --------- | --------------- | --------------- | ----------------------------------------- |
-| BRAND-001 | Not changed yet | Not created yet | Not run yet; learner observations pending |
-
-## Later
-
-No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
+| Spec ID   | Files                                                                   | Issue / PR       | Actual checks and observations                                                                                                                                       |
+| :-------- | :---------------------------------------------------------------------- | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001 | `public/index.html`, `public/styleguide.html`, `SPEC.md`, `LEARNING.md` | Issue #1 / PR #1 | Prepared checks: `npm run check` passed. Browser verification: size selector and bag operational, responsive mobile layout verified, full keyboard tab order intact. |
