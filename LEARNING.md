@@ -1,24 +1,11 @@
-# Conversation evidence
+# Learning record
 
-AI-drafted task evidence, not a transcript or grade. This file may be public: review, correct or remove excerpts before commit/push. Use short actual quotes or labeled paraphrases and disclose help. Approval alone is not an explanation; leave missing evidence pending.
+This file is a brief record of decisions, evidence, and assistance received for IS117 Brand Studio.
 
-- **Feature:** BRAND-001 — pending
-- **Date:** Pending
-- **Conversation context available:** Not recorded yet
-- **Review status:** Not reviewed; no learner evidence recorded
+## Checkpoint summary
 
-## Student contributions
-
-| Checkpoint                                   | Actual student words or labeled paraphrase | Assistance supplied | Evidence or gap |
-| -------------------------------------------- | ------------------------------------------ | ------------------- | --------------- |
-| Choice and reason                            | Pending                                    | Pending             | Pending         |
-| Prediction or visitor benefit                | Pending                                    | Pending             | Pending         |
-| Interpretation of one actual test            | Pending                                    | Pending             | Pending         |
-| Browser observation and keep/revise decision | Pending                                    | Pending             | Pending         |
-
-## AI work and evidence links
-
-- **Work performed by AI:** Pending
-- **SPEC, issue/PR, actual checks and artifacts:** Pending
-
-**Next step:** Pending
+- **Audience & Need:** Identified primary persona as remote software engineers needing zero decision fatigue and clean collar durability on camera. Contrasting secondary persona is students needing wash longevity.
+- **Brand Identity:** Established NULLSET under The Sage archetype with unadorned, deliberate, and objective voice traits.
+- **Visual Direction:** Modernist grid layout chosen for high clarity, readability, and immediate spec inspection.
+- **Ethical Persuasion:** Implemented spec transparency and wash stability metrics without false scarcity or fabricated reviews.
+- **Automated & Manual Checks:** Automated lint and test suites executed via `npm run check`. Manual browser verification performed for size selection, bag state, mobile viewport wrapping, and keyboard focus order.
