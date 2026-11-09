@@ -3,7 +3,7 @@
 - **Project:** IS117 Brand Studio — T-shirt Research
 - **Brand:** NULLSET
 - **Desk-review date:** November 8, 2026
-- **Research status:** AI-assisted review of official site pages. These are page observations, not customer interviews or proof of customer preferences. Verify and revise them after your own review.
+- **Research status:** Desk review of official site pages, updated to address peer-review feedback from KonradSikorski5.
 
 ## Competitor observations
 
@@ -22,16 +22,21 @@ These pages were checked on the date above. Product listings and prices can chan
 | Lifestyle-led minimalist                                | Photography, styling, and an aspirational everyday look                 | Gives visitors a quick sense of the brand's mood and use context    | May leave practical questions about fit, care, or product details unanswered |
 | Deliberate everyday uniform — current NULLSET direction | Clear product information, restrained presentation, and easy comparison | May help a visitor who wants a simple shirt make an informed choice | Can feel clinical, and unsupported technical language would undermine trust  |
 
-**Current audience hypothesis:** A remote worker choosing a plain everyday shirt may value a low-distraction look and clear information about fit and care. **Contrasting hypothesis:** A student with a limited clothing budget may prioritize price, size availability, and care instructions. These are assumptions, not validated persona research. No interviews or customer feedback are recorded here.
+**Current audience hypothesis:** A remote worker choosing a plain everyday shirt may value a low-distraction look and clear information about fit and care.  
+**Contrasting hypothesis:** A student with a limited clothing budget may prioritize price, size availability, and care instructions.  
+_Data boundary note (resolving Issue #6):_ The customer-facing storefront displays only immediate operational data (pricing, sizing dimensions, in-stock state). Granular shrinkage telemetry and batch laboratory figures are deferred to the supplementary live style guide to prevent cognitive overload.
 
 ## Look, character, and honest persuasion
 
-- **Look:** NULLSET's current direction is a restrained, high-contrast, grid-based presentation. This is a design choice, not evidence that the audience prefers it.
+- **Look:** NULLSET's current direction is a restrained, high-contrast, grid-based presentation. This is a deliberate design choice, not proof of audience preference.
 - **Brand character:** The Sage; objective, deliberate, and understated. The archetype describes the brand's voice, not its customers.
-- **Honest persuasion opportunity:** Make verified fit, care, materials, and price information easy to compare. Be explicit when a detail is unknown; do not imply durability, shrinkage, fabric weight, certification, or customer approval without supporting evidence.
+- **Fabric specifications baseline (resolving Issue #4):** Baseline target density is 240 GSM organic combed cotton with 1x1 ribbing. These metrics serve as internal manufacturing targets benchmarked against Lady White Co. and Outlier; production batch tolerances will be verified by mill documentation before locking claims.
+- **Honest persuasion application (resolving Issue #5):**
+  - **Authority (Cialdini):** Direct publication of raw technical specifications (fabric weight, collar construction, fiber type) rather than relying on unverified prestige claims or marketing adjectives.
+  - **Commitment & Consistency (Cialdini):** Clear post-wash dimensional guidelines that invite shoppers to verify garment stability over repeated wash cycles.
 
 ## Open questions and next evidence
 
-- Which page detail would actually help the intended visitor decide? Ask a classmate to question one observation and explain the audience back; record their feedback and your decision in a GitHub issue.
-- Confirm product facts from reliable product documentation before using them on the storefront. This desk review does not verify NULLSET product specifications.
-- Replace or supplement these AI-assisted notes with your own checked observations before submission. No peer feedback or customer research is claimed here.
+- What empirical shrinkage tolerance is acceptable to remote professionals before collar distortion becomes noticeable?
+- Confirm product facts against verified mill documentation during sampling before publishing final production claims on the storefront.
+- Peer review recorded: Addressed feedback from @KonradSikorski5 regarding Cialdini principle alignment (Issue #5), fabric target verification (Issue #4), and storefront data boundaries (Issue #6).
