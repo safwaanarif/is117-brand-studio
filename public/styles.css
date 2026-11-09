@@ -1308,5 +1308,5 @@ legend {
 
 .swatch-accent {
   background-color: var(--color-accent, #2b3a42);
-  color: #fff;
+  color: var(--color-ink, #171a18);
 }
