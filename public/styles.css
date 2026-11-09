@@ -1295,3 +1295,18 @@ legend {
     animation: none !important;
   }
 }
+
+.swatch-bg {
+  background-color: var(--color-bg, #faf9f6);
+  border: 1px solid var(--color-border, #dcdcdc);
+}
+
+.swatch-text {
+  background-color: var(--color-text, #111);
+  color: #fff;
+}
+
+.swatch-accent {
+  background-color: var(--color-accent, #2b3a42);
+  color: var(--color-ink, #171a18);
+}

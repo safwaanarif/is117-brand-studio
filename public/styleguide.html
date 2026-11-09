@@ -4,45 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NULLSET — Live Style Guide</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner container">
-        <a href="/" class="brand-logo" aria-label="NULLSET Home">
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <circle
-              cx="16"
-              cy="16"
-              r="12"
-              stroke="currentColor"
-              stroke-width="2.5"
-            />
-            <line
-              x1="7"
-              y1="25"
-              x2="25"
-              y2="7"
-              stroke="currentColor"
-              stroke-width="2.5"
-            />
-          </svg>
-          <span class="brand-name">NULLSET</span>
-        </a>
-        <nav class="nav-links">
+    <header class="studio-header">
+      <div class="studio-bar">
+        <span class="studio-badge">IS117 Brand Studio</span>
+        <nav class="studio-nav" aria-label="Project">
           <a href="index.html">Storefront</a>
+          <a href="studio.html">Studio overview</a>
         </nav>
       </div>
     </header>
 
-    <main class="container">
+    <main class="page-shell">
       <h1>Live Brand Style Guide</h1>
       <p>Shared visual identity, tokens, and components for NULLSET.</p>
 
@@ -55,40 +30,30 @@
       <section class="guide-section">
         <h2>Color Palette</h2>
         <div class="swatch-grid">
-          <div
-            class="swatch"
-            style="
-              background: var(--color-bg);
-              border: 1px solid var(--color-border);
-            "
-          >
+          <div class="swatch swatch-bg">
             <span>Background (#FAF9F6)</span>
           </div>
-          <div
-            class="swatch"
-            style="background: var(--color-text); color: #fff"
-          >
+          <div class="swatch swatch-text">
             <span>Text Primary (#111111)</span>
           </div>
-          <div
-            class="swatch"
-            style="background: var(--color-accent); color: #fff"
-          >
-            <span>Accent (#2B3A42)</span>
+          <div class="swatch swatch-accent">
+            <span>Accent (#E3EF56)</span>
           </div>
         </div>
       </section>
 
       <section class="guide-section">
-        <h2>Typography & Hierarchy</h2>
+        <h2>Typography &amp; Hierarchy</h2>
         <h1>Display 1: The zero-distraction uniform.</h1>
         <h2>Heading 2: Technical Specifications</h2>
         <p>Body copy: High-density combed cotton with reinforced ribbing.</p>
       </section>
     </main>
 
-    <footer class="site-footer container">
-      <p>NULLSET Style Guide — Linked live tokens.</p>
+    <footer class="studio-footer">
+      <div class="footer-inner">
+        <p>NULLSET Style Guide — Linked live tokens.</p>
+      </div>
     </footer>
   </body>
 </html>

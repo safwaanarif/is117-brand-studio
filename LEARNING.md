@@ -9,3 +9,7 @@ This file is a brief record of decisions, evidence, and assistance received for 
 - **Visual Direction:** Modernist grid layout chosen for high clarity, readability, and immediate spec inspection.
 - **Ethical Persuasion:** Implemented spec transparency and wash stability metrics without false scarcity or fabricated reviews.
 - **Automated & Manual Checks:** Automated lint and test suites executed via `npm run check`. Manual browser verification performed for size selection, bag state, mobile viewport wrapping, and keyboard focus order.
+
+## Current research checkpoint
+
+- **AI assistance (learner-reviewed for summary accuracy):** On November 8, 2026, the AI checked official page content from Lady White Co., Outlier, and Asket and drafted source-linked observations and positioning hypotheses in [docs/research.md](docs/research.md). The learner confirmed this summary is accurate; that confirmation does not make the AI observations customer findings or learner research. The learner's own site observations, peer feedback, and response to that feedback are not yet recorded in this chat.
