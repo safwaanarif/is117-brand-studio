@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: T-shirt Research Checkpoint
+- Stage: T-shirt Research Checkpoint (Complete) — Moving to Plan stage.
 - Current feature: `T-SHIRT-RESEARCH` — competitor observations, audience positioning, and peer review.
-- Status: Complete
-- Next small decision: Address peer review issues and finalize submission.
+- Status: Complete (see Issue #1, PR #2, and resolved peer-review Issues #3–#7).
+- Next small decision: Draft two positioning approaches, user stories, and SQLite backend plan for the T-shirt Plan checkpoint.
 
 ## Product boundary
 
