@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: BRAND-001 implementation ready for verification.
-- Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: In progress.
-- Next small decision: Verify automated checks and perform browser checks.
+- Stage: T-shirt Research Checkpoint
+- Current feature: `T-SHIRT-RESEARCH` — competitor observations, audience positioning, and peer review.
+- Status: Complete
+- Next small decision: Address peer review issues and finalize submission.
 
 ## Product boundary
 
@@ -55,6 +55,9 @@ The primary need guides the page. Give the secondary card one contrasting need t
 Scope: turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
 
 ## Evidence
+
+- Storefront branding, two visual direction previews, and verified baseline specs updated in `public/index.html` and `public/styles.css`.
+- Automated test meaning, keyboard/mobile browser observations, and keep/change decisions recorded in [LEARNING.md](LEARNING.md#storefront-revision--verification-log-same-shirt-different-story).
 
 | Spec ID   | Files                                                                   | Issue / PR       | Actual checks and observations                                                                                                                                       |
 | :-------- | :---------------------------------------------------------------------- | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -3,196 +3,253 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
-    />
-    <title>Your Brand — neutral storefront starter</title>
-    <link rel="icon" href="data:," />
+    <title>NULLSET — Standard Issue White T-Shirt</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
-      >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
-    </aside>
-    <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
-        ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
-      /></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html" aria-current="page">Shop</a>
-        <a class="nav-link" href="styleguide.html">Style guide</a>
-        <a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
-      </nav>
-      <a class="bag-link" href="#demo-bag" aria-label="View demo bag"
-        >Demo bag <span id="bag-count" class="bag-count">0</span></a
-      >
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="studio-header">
+      <div class="studio-bar">
+        <a class="brand-logo" href="index.html" aria-label="NULLSET Home">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect
+              x="2"
+              y="2"
+              width="20"
+              height="20"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <line
+              x1="4"
+              y1="20"
+              x2="20"
+              y2="4"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+          <span>NULLSET</span>
+        </a>
+        <nav class="studio-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Storefront</a>
+          <a href="styleguide.html">Style Guide</a>
+          <a href="studio.html">Studio Overview</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
-          </div>
-          <img
-            class="shirt-image"
-            src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
-            width="800"
-            height="880"
-            fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
-          </div>
-        </div>
-        <div class="product-information">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+    <main id="main-content" class="page-shell">
+      <article class="product-page">
+        <div class="product-info">
+          <header class="product-header">
+            <p class="eyebrow">ISSUE 01 // STANDARD UNIFORM</p>
+            <h1 class="product-title">The Zero-Distraction White T-Shirt</h1>
+            <p class="tagline">
+              Restrained, everyday baseline garment built for predictable fit
+              and clear specifications.
+            </p>
+          </header>
+
+          <p class="product-lead">
+            Designed for remote technical workflows and daily repetition. No
+            seasonal graphics, no unverified performance claims—just a single,
+            consistent white crew-neck silhouette.
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
-          </p>
-          <div class="price-row">
-            <p class="price">$28 <span>USD</span></p>
-            <span class="micro-label">Fictional demo price</span>
+
+          <div class="price-line">
+            <span class="price">$38.00</span>
+            <span class="price-note"
+              >Baseline unit price (Demo storefront)</span
+            >
           </div>
-          <form id="product-form" class="product-form" novalidate>
-            <fieldset aria-describedby="size-help size-error">
-              <legend>Choose a size</legend>
-              <p id="size-help" class="field-help">
-                Demo sizes: S, M, L, and XL.
+
+          <form id="product-form" novalidate>
+            <fieldset
+              class="size-group"
+              aria-describedby="size-hint size-error"
+            >
+              <legend class="size-legend">Select Size</legend>
+              <p id="size-hint" class="size-hint">
+                Standard unisex block. Choose a size before adding to the demo
+                bag.
               </p>
-              <div class="size-options">
-                <label class="size-option"
-                  ><input type="radio" name="size" value="S" /><span
-                    >S</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="M" /><span
-                    >M</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="L" /><span
-                    >L</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="XL" /><span
-                    >XL</span
-                  ></label
-                >
+              <div class="size-options" role="radiogroup" aria-label="Sizes">
+                <label class="size-pill">
+                  <input type="radio" name="size" value="S" />
+                  <span class="size-text">S</span>
+                </label>
+                <label class="size-pill">
+                  <input type="radio" name="size" value="M" />
+                  <span class="size-text">M</span>
+                </label>
+                <label class="size-pill">
+                  <input type="radio" name="size" value="L" />
+                  <span class="size-text">L</span>
+                </label>
+                <label class="size-pill">
+                  <input type="radio" name="size" value="XL" />
+                  <span class="size-text">XL</span>
+                </label>
               </div>
-              <p id="size-error" class="field-error" role="alert" hidden>
+              <p
+                id="size-error"
+                class="form-error"
+                role="alert"
+                aria-live="polite"
+                hidden
+              >
                 Choose a size before adding the shirt to your demo bag.
               </p>
             </fieldset>
-            <button class="button button-primary add-button" type="submit">
-              Add to demo bag <span aria-hidden="true">↗</span>
-            </button>
-          </form>
-          <p class="demo-disclaimer">
-            A classroom interaction, using fictional product data. No order,
-            payment, or personal information is collected.
-          </p>
-          <dl class="product-facts">
-            <div>
-              <dt>Color</dt>
-              <dd>White</dd>
-            </div>
-            <div>
-              <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
-            </div>
-            <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
 
-      <section
-        id="demo-bag"
-        class="bag-section wrap"
-        aria-labelledby="bag-title"
-      >
-        <div>
-          <p class="eyebrow">A small working interaction</p>
-          <h2 id="bag-title">Your demo bag.</h2>
+            <div class="form-actions">
+              <button type="submit" class="button-primary">
+                Add to Demo Bag
+              </button>
+            </div>
+            <p class="demo-caption">
+              Interactive prototype only — no payment or personal data is
+              collected.
+            </p>
+          </form>
         </div>
-        <div class="bag-details">
-          <p
-            id="bag-status"
-            class="bag-message"
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-          >
-            Your demo bag is empty. Choose a size to try it.
+
+        <aside class="demo-bag" aria-label="Demo Shopping Bag">
+          <p class="demo-flag">Session State</p>
+          <h2 class="bag-title">
+            Demo Bag <span id="bag-count" class="bag-count">0</span>
+          </h2>
+          <p id="bag-status" class="bag-status" aria-live="polite">
+            Your demo bag is currently empty.
           </p>
           <ul id="bag-items" class="bag-items"></ul>
-          <button id="clear-bag" class="text-button" type="button" disabled>
-            Empty demo bag
-          </button>
-          <p class="field-help">
-            The bag resets when this page reloads. There is no checkout.
+          <p class="bag-note">
+            Items persist only in memory for this browser session.
           </p>
+          <button
+            type="button"
+            id="clear-bag"
+            class="button-secondary"
+            disabled
+          >
+            Empty Bag
+          </button>
+        </aside>
+
+        <section class="product-details" aria-labelledby="specs-heading">
+          <h2 id="specs-heading" class="section-title">
+            Verified Baseline Specifications
+          </h2>
+          <dl class="meta-list">
+            <dt>Colorway</dt>
+            <dd>Optical White (Single SKU)</dd>
+            <dt>Construction</dt>
+            <dd>Crew-neck short-sleeve silhouette</dd>
+            <dt>Material &amp; Wash Data</dt>
+            <dd>
+              Pending supplier verification (unverified GSM and wash-shrinkage
+              estimates removed per SPEC boundary)
+            </dd>
+            <dt>Care Baseline</dt>
+            <dd>Machine wash cold, lay flat or hang dry</dd>
+          </dl>
+        </section>
+      </article>
+
+      <section class="directions-section" aria-labelledby="directions-heading">
+        <div class="directions-header">
+          <p class="eyebrow">SAME SHIRT, DIFFERENT STORY</p>
+          <h2 id="directions-heading" class="section-title">
+            Visual Direction Comparison
+          </h2>
+          <p class="directions-intro">
+            Comparing two positioning frames for the identical white T-shirt
+            without altering underlying product facts.
+          </p>
+        </div>
+
+        <div class="directions-grid">
+          <article class="direction-card direction-active">
+            <span class="direction-badge">Direction A — Selected</span>
+            <h3>Deliberate Everyday Uniform (The Sage)</h3>
+            <p>
+              High-contrast paper-and-slate palette, monospace metadata, and
+              explicit disclosure of what is verified versus unverified. Built
+              for remote technical workers who want zero decision fatigue.
+            </p>
+            <ul class="direction-traits">
+              <li>
+                <strong>Palette:</strong> Warm Off-White (#FAF9F6) &amp; Deep
+                Slate (#2B3A42)
+              </li>
+              <li>
+                <strong>Tone:</strong> Objective, restrained,
+                specification-first
+              </li>
+              <li>
+                <strong>Trade-off:</strong> Prioritizes clarity over emotional
+                lifestyle storytelling
+              </li>
+            </ul>
+          </article>
+
+          <article class="direction-card direction-alt">
+            <span class="direction-badge">Direction B — Alternative</span>
+            <h3>Lifestyle-Led Minimalist (The Creator)</h3>
+            <p>
+              Soft editorial warmth, relaxed narrative framing, and focus on
+              daily routine and personal expression. Built for budget-conscious
+              students seeking an adaptable wardrobe staple.
+            </p>
+            <ul class="direction-traits">
+              <li>
+                <strong>Palette:</strong> Warm Sand (#F3EFEA) &amp; Espresso Ink
+                (#2C2520)
+              </li>
+              <li>
+                <strong>Tone:</strong> Conversational, approachable,
+                context-driven
+              </li>
+              <li>
+                <strong>Trade-off:</strong> Warmer first impression, but hides
+                technical comparison details
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
-        <div>
-          <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
-          </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
-          >
-        </div>
+      <section class="studio-callout" aria-labelledby="guide-callout-heading">
+        <p class="studio-kicker">Design System Documentation</p>
+        <h2 id="guide-callout-heading" class="studio-title">
+          Inspect Live Tokens &amp; Typography
+        </h2>
+        <p class="studio-copy">
+          Review the shared color contrast ratios, focus states, and reusable
+          components powering NULLSET.
+        </p>
+        <a class="button-accent" href="styleguide.html"
+          >Open Live Style Guide</a
+        >
       </section>
     </main>
 
-    <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
-      >
+    <footer class="studio-footer">
+      <div class="footer-inner">
+        <p>NULLSET — IS117 Brand Studio (Same Shirt, Different Story)</p>
+        <p>
+          All product claims restricted to verified baseline facts per SPEC.md.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
