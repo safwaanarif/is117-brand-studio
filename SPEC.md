@@ -54,6 +54,40 @@ The primary need guides the page. Give the secondary card one contrasting need t
 
 Scope: turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
 
+## Plan
+
+- **Plan date:** November 15, 2026 (Planning document only — features below are planned for Build A/B).
+- **Goal:** Enable a remote tech worker or student to inspect verified baseline specs, compare two positioning frames, pick a size, and complete a persistent SQLite demo order quickly.
+- **Carried forward:**
+  - **Promise:** "The Zero-Distraction White T-Shirt — restrained, everyday baseline garment built for predictable fit and clear specifications."
+  - **Character & Look:** The Sage archetype; warm off-white (`#FAF9F6`), deep slate (`#2B3A42`), monospace metadata, and high-contrast grid layout.
+  - **Honest Persuasion:** (1) _Authority_ via transparent disclosure of verified vs. unverified specs, and (2) _Commitment & Consistency_ via explicit care guidelines and persistent order records.
+
+### Two Approaches to Compare
+
+| Dimension             | Approach A: Spec-First Storefront (Selected Primary)                                                                                                       | Approach B: Context & Comparison First (Alternative)                                                                              |
+| :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| **First thing shown** | Product title, price (`$38.00`), size selector (`S–XL`), and `Add to Demo Bag` immediately above the fold, followed by verified specs and direction cards. | Side-by-side "Same Shirt, Different Story" audience framing first, scrolling down into the size selector and demo checkout form.  |
+| **Main action**       | Select size $\rightarrow$ enter quantity & demo email $\rightarrow$ submit simulated checkout $\rightarrow$ view SQLite order confirmation.                | Compare positioning frames $\rightarrow$ verify baseline specs $\rightarrow$ select size $\rightarrow$ submit simulated checkout. |
+| **Why try it**        | Minimizes clicks for returning or decisive buyers who want fast size selection and checkout.                                                               | Helps first-time visitors understand the deliberate uniform concept before committing to a size.                                  |
+| **What I'll compare** | Have a peer complete the same demo checkout task in A and B, recording time-to-checkout and whether they notice the verified spec boundary.                | Same task and rubric check.                                                                                                       |
+
+### User Stories, Essential Features & Observable Checks
+
+| ID     | User Story                                                                                                               | Essential Feature                                                                                                                                                                          | Observable Check (Pass/Fail)                                                                                                                                                                     |
+| :----- | :----------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **S1** | As a remote worker, I want clear size options and verified baseline specs so I don't buy based on unverified hype.       | **F1:** Accessible radio size selector (`S`, `M`, `L`, `XL`) paired with a verified specifications list that explicitly marks unverified GSM/wash metrics as pending.                      | Select `M` via keyboard (`Tab` + Arrow keys); verify visible focus ring and confirm the specs table states material/wash data is pending verification.                                           |
+| **S2** | As a shopper, I want an itemized order summary before submitting so there are no surprise costs.                         | **F2:** Quantity selector (`1–5`) and live order summary displaying `size`, `quantity × $38.00`, `$0.00` demo shipping, and total prior to checkout.                                       | Choose size `L` and quantity `2`; verify the summary displays `L`, `2 × $38.00 = $76.00`, shipping line, and `$76.00` total before clicking checkout.                                            |
+| **S3** | As a buyer, I want clear validation and confirmation on demo checkout so I know whether my order succeeded.              | **F3:** Simulated checkout form requiring a selected size and valid demo email format (`demo@example.test`), returning an inline error on missing/invalid input or an order ID on success. | Submit with no size or invalid email $\rightarrow$ error alert displays and nothing saves. Submit with valid size + email $\rightarrow$ confirmation banner with generated order number appears. |
+| **S4** | As the store owner, I want demo orders saved in a real SQLite database so order history persists across server restarts. | **F4:** Local Node server (`server.mjs` using built-in `node:sqlite`) that validates inputs, calculates totals server-side (`qty × 38`), and persists orders in SQLite (`data/orders.db`). | Place a demo order, stop `node server.mjs` (`Ctrl + C`), restart the server, refresh the page, and confirm the previous order ID still renders in "Recent Demo Orders."                          |
+
+### Data, States & SQLite Implementation Plan
+
+- **Inputs & Limits:** Size (`S`, `M`, `L`, `XL`), quantity (`1–5`), and demo email (`demo@example.test`, validated only, never stored permanently). Fictional brand; unverified fabric GSM/shrinkage figures remain excluded per product boundary.
+- **UI States:** `idle` $\rightarrow$ `validation-error` (missing size/bad email) $\rightarrow$ `submitting` $\rightarrow$ `confirmed` (with SQLite order ID) $\rightarrow$ `server-error` (if backend write fails).
+- **SQLite Backend Plan:** Extend `server.mjs` using Node's native `node:sqlite` (`DatabaseSync`) following the course _Campus Cotton_ SQLite starter pattern (`POST /api/orders` to insert validated orders and `GET /api/orders` to list saved orders). Server calculates price from its own constant (`38`) rather than trusting client-submitted totals. Note: Static GitHub Pages preview cannot execute SQLite and will display a clear notice that persistence requires running `npm start` locally.
+- **AI Help:** Gemini assisted in structuring the comparison table and SQLite endpoint plan; all brand decisions, user stories, and checks were verified against `docs/research.md` and `SPEC.md`.
+
 ## Evidence
 
 - Storefront branding, two visual direction previews, and verified baseline specs updated in `public/index.html` and `public/styles.css`.
